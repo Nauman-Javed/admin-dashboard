@@ -1,21 +1,11 @@
-import { CssBaseline, ThemeProvider } from "@mui/material";
-import { ColorModeContext, useMode } from "./theme";
-import Topbar from "./global/Topbar";
+import { Box, CssBaseline } from "@mui/material";
 
 function App() {
-  const [theme, colorMode] = useMode();
-
   return (
-    <ColorModeContext.Provider value={colorMode}>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <div className="app">
-          <main className="content">
-            <Topbar />
-          </main>
-        </div>
-      </ThemeProvider>
-    </ColorModeContext.Provider>
+    <div className="app">
+      <CssBaseline />
+      <Box>Nauman Javed Qureshi</Box>
+    </div>
   );
 }
 
