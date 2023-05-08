@@ -1,4 +1,11 @@
-import { AppBar, Box, IconButton, Toolbar, Typography } from "@mui/material";
+import {
+  AppBar,
+  Box,
+  IconButton,
+  Link,
+  Toolbar,
+  Typography,
+} from "@mui/material";
 import React from "react";
 import { useTheme } from "../theme";
 import styled from "@emotion/styled";
@@ -28,11 +35,16 @@ const Navbar = () => {
             Nauman Javed Qureshi
           </Typography>
           <Box>
+            <Box></Box>
             <IconButton>
-              <GitHubIcon sx={{ color: subHeading }} />
+              <Link href="https://github.com/Nauman-Javed">
+                <GitHubIcon sx={{ color: subHeading }} />
+              </Link>
             </IconButton>
             <IconButton>
-              <LinkedInIcon sx={{ color: subHeading }} />
+              <Link href="https://www.linkedin.com/in/nauman-javed-268162210/">
+                <LinkedInIcon sx={{ color: subHeading }} />
+              </Link>
             </IconButton>
             <IconButton onClick={modeHandler}>
               {mode === "light" ? (
