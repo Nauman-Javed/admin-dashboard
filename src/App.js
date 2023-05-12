@@ -10,7 +10,6 @@ function App() {
   return (
     <>
       <CssBaseline />
-
       <Box
         sx={{
           background: background,
@@ -19,9 +18,9 @@ function App() {
         <Container maxWidth={"xl"}>
           <Navbar />
           <Home />
-          {/* <About /> */}
-          {/* <TechStack />
-          <Projects />
+          <About />
+          <TechStack />
+          {/*<Projects />
           <Contact /> */}
         </Container>
       </Box>
