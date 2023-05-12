@@ -1,11 +1,8 @@
 import { Box, Container, CssBaseline } from "@mui/material";
 import { useTheme } from "./theme";
-import TechStack from "./views/TechStack";
-import Home from "./views/Home";
 import Navbar from "./global/Navbar";
-import Projects from "./views/Projects";
-import Contact from "./views/Contact";
-import About from "./views/About";
+
+import { Home, About, TechStack, Projects, Contact } from "./views";
 
 function App() {
   const { background } = useTheme();
@@ -22,10 +19,10 @@ function App() {
         <Container maxWidth={"xl"}>
           <Navbar />
           <Home />
-          <About />
-          <TechStack />
+          {/* <About /> */}
+          {/* <TechStack />
           <Projects />
-          <Contact />
+          <Contact /> */}
         </Container>
       </Box>
     </>

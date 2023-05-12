@@ -3,6 +3,7 @@ import {
   Box,
   IconButton,
   Link,
+  MenuItem,
   Toolbar,
   Typography,
 } from "@mui/material";
@@ -34,25 +35,63 @@ const Navbar = () => {
           <Typography variant="h6" sx={{ flexGrow: 1 }} color={heading}>
             Nauman Javed Qureshi
           </Typography>
-          <Box>
-            <Box></Box>
-            <IconButton>
-              <Link href="https://github.com/Nauman-Javed">
-                <GitHubIcon sx={{ color: subHeading }} />
-              </Link>
-            </IconButton>
-            <IconButton>
-              <Link href="https://www.linkedin.com/in/nauman-javed-268162210/">
-                <LinkedInIcon sx={{ color: subHeading }} />
-              </Link>
-            </IconButton>
-            <IconButton onClick={modeHandler}>
-              {mode === "light" ? (
-                <LightModeIcon sx={{ color: subHeading }} />
-              ) : (
-                <DarkModeIcon sx={{ color: subHeading }} />
-              )}
-            </IconButton>
+          <Box display={"flex"} alignItems={"center"}>
+            <Box display={"flex"} alignItems={"center"}>
+              <MenuItem
+                sx={{
+                  color: subHeading,
+                }}
+              >
+                Home
+              </MenuItem>
+              <MenuItem
+                sx={{
+                  color: subHeading,
+                }}
+              >
+                About
+              </MenuItem>
+              <MenuItem
+                sx={{
+                  color: subHeading,
+                }}
+              >
+                Tech Stack
+              </MenuItem>
+              <MenuItem
+                sx={{
+                  color: subHeading,
+                }}
+              >
+                Projects
+              </MenuItem>
+              <MenuItem
+                sx={{
+                  color: subHeading,
+                }}
+              >
+                Contact
+              </MenuItem>
+            </Box>
+            <Box>
+              <IconButton>
+                <Link href="https://github.com/Nauman-Javed">
+                  <GitHubIcon sx={{ color: subHeading }} />
+                </Link>
+              </IconButton>
+              <IconButton>
+                <Link href="https://www.linkedin.com/in/nauman-javed-268162210/">
+                  <LinkedInIcon sx={{ color: subHeading }} />
+                </Link>
+              </IconButton>
+              <IconButton onClick={modeHandler}>
+                {mode === "light" ? (
+                  <LightModeIcon sx={{ color: subHeading }} />
+                ) : (
+                  <DarkModeIcon sx={{ color: subHeading }} />
+                )}
+              </IconButton>
+            </Box>
           </Box>
         </Toolbar>
       </StyledAppbar>
