@@ -38,7 +38,7 @@ const Navbar = () => {
   return (
     <>
       <StyledAppbar>
-        <Toolbar>
+        <Toolbar sx={{ paddingX: "0 !important" }}>
           <Typography variant="h6" sx={{ flexGrow: 1 }} color={linear}>
             Nauman Javed Qureshi
           </Typography>
