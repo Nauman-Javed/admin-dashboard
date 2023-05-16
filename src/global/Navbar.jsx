@@ -18,7 +18,7 @@ import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { Links } from "../data/Constants";
 
 const Navbar = () => {
-  const { background, heading, subHeading, mode, setMode } = useTheme();
+  const { background, heading, linear, subHeading, mode, setMode } = useTheme();
   const [value, setValue] = useState("Home");
 
   const StyledAppbar = styled(AppBar)({
@@ -39,7 +39,7 @@ const Navbar = () => {
     <>
       <StyledAppbar>
         <Toolbar>
-          <Typography variant="h6" sx={{ flexGrow: 1 }} color={heading}>
+          <Typography variant="h6" sx={{ flexGrow: 1 }} color={linear}>
             Nauman Javed Qureshi
           </Typography>
           <Box display={"flex"} alignItems={"center"}>

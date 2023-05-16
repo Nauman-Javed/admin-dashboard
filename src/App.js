@@ -1,4 +1,4 @@
-import { Box, Container, CssBaseline } from "@mui/material";
+import { Box, Container, CssBaseline, Grid } from "@mui/material";
 import { useTheme } from "./theme";
 import Navbar from "./global/Navbar";
 
@@ -17,11 +17,23 @@ function App() {
       >
         <Container maxWidth={"xl"}>
           <Navbar />
-          <Home />
-          <About />
-          <TechStack />
-          {/*<Projects />
-          <Contact /> */}
+          <Grid container spacing={3}>
+            <Grid item xs={12}>
+              <Home />
+            </Grid>
+            <Grid item xs={12}>
+              <About />
+            </Grid>
+            <Grid item xs={12}>
+              <TechStack />
+            </Grid>
+            <Grid item xs={12}>
+              <Projects />
+            </Grid>
+            <Grid item xs={12}>
+              <Contact />
+            </Grid>
+          </Grid>
         </Container>
       </Box>
     </>

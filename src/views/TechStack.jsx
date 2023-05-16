@@ -1,16 +1,16 @@
 import { Box, Grid, Stack, Toolbar, Typography } from "@mui/material";
 import React from "react";
 import { useTheme } from "../theme";
-import bootstrap from "../assets/bootstrap.png";
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import javascript from "../assets/js.png";
-import react from "../assets/react.png";
-import sass from "../assets/sass.png";
-import github from "../assets/github.png";
+import bootstrap from "../assets/Icons/bootstrap.png";
+import html from "../assets/Icons/html.png";
+import css from "../assets/Icons/css.png";
+import javascript from "../assets/Icons/js.png";
+import sass from "../assets/Icons/sass.png";
+import github from "../assets/Icons/github.png";
+import react from "../assets/Icons/react.png";
 
 const TechStack = () => {
-  const { background, heading, subHeading, mode, setMode } = useTheme();
+  const { heading, subHeading } = useTheme();
 
   return (
     <Toolbar>
