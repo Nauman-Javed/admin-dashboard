@@ -35,6 +35,14 @@ const Navbar = () => {
     setValue(val);
   };
 
+  const TabPanel = ({ children, value, index }) => {
+    return (
+      <div role="tabpanel" hidden={value !== index}>
+        {value === index && <Box p={3}>{children}</Box>}
+      </div>
+    );
+  };
+
   return (
     <>
       <StyledAppbar>
@@ -48,10 +56,15 @@ const Navbar = () => {
                 value={value}
                 onChange={handleChange}
                 textColor="secondary"
-                indicatorColor="secondary"
+                indicatorColor="primary"
               >
-                {Links.map((link) => (
-                  <Tab value={link.name} label={link.name}>
+                {Links.map((link, ind) => (
+                  <Tab
+                    value={link.name}
+                    label={link.name}
+                    id={ind}
+                    href={`#${link.link}`}
+                  >
                     {link.name}
                   </Tab>
                 ))}

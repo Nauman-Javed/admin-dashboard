@@ -7,8 +7,8 @@ const About = () => {
   const { heading, subHeading } = useTheme();
 
   return (
-    <Toolbar>
-      <Box maxWidth={{ sm: "100%", lg: "50%" }} height={"100vh"}>
+    <>
+      <Box maxWidth={{ sm: "100%", lg: "50%" }} height={"100vh"} id="about">
         <Box mb={4}>
           <Typography variant="h3" fontWeight={"bold"} color={heading} mb={4}>
             About Me
@@ -43,7 +43,7 @@ const About = () => {
           />
         </Box>
       </Box>
-    </Toolbar>
+    </>
   );
 };
 

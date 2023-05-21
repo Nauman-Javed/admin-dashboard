@@ -11,7 +11,6 @@ const Home = () => {
           height: "93vh",
           display: "flex",
           alignItems: "center",
-          background: "red",
         }}
       >
         <Typography variant="h2" color={heading} fontWeight={"bold"}>
@@ -21,7 +20,8 @@ const Home = () => {
           <br />
           <span
             style={{
-              background: "linear-gradient(to right, #121FCF 0%, #CF1512 100%)",
+              background:
+                "linear-gradient(to right, #15B4FA 20%, #E70FAA 100%)",
               webkitBackgroundClip: "text",
               webkitTextFillColor: "transparent",
             }}

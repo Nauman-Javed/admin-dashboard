@@ -9,12 +9,14 @@ import sass from "../assets/Icons/sass.png";
 import github from "../assets/Icons/github.png";
 import react from "../assets/Icons/react.png";
 
+const Image = [bootstrap, html];
+
 const TechStack = () => {
   const { heading, subHeading } = useTheme();
 
   return (
-    <Toolbar>
-      <Box height={"100vh"} width={"100%"}>
+    <>
+      <Box height={"100vh"} width={"100%"} id="techStack">
         <Stack mb={20}>
           <Typography variant="h3" fontWeight={"bold"} color={heading} mb={2}>
             My Tech Stack
@@ -54,7 +56,7 @@ const TechStack = () => {
           </Grid>
         </Box>
       </Box>
-    </Toolbar>
+    </>
   );
 };
 
