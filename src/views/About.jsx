@@ -1,7 +1,7 @@
-import { Box, Toolbar, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
 import { useTheme } from "../theme";
-import Experience from "../components/Experience";
+import Experience from "../components/About/Experience";
 
 const About = () => {
   const { heading, subHeading } = useTheme();

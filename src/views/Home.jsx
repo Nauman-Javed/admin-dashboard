@@ -1,9 +1,9 @@
-import { Box, Toolbar, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
 import { useTheme } from "../theme";
 
 const Home = () => {
-  const { heading, linear } = useTheme();
+  const { heading } = useTheme();
   return (
     <>
       <Box
@@ -26,7 +26,6 @@ const Home = () => {
               webkitTextFillColor: "transparent",
             }}
           >
-            {" "}
             Nauman Javed Qureshi
           </span>
           <br />I am a Front-End Developer

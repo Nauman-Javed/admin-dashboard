@@ -18,7 +18,7 @@ import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { Links } from "../data/Constants";
 
 const Navbar = () => {
-  const { background, heading, linear, subHeading, mode, setMode } = useTheme();
+  const { background, linear, subHeading, mode, setMode } = useTheme();
   const [value, setValue] = useState("Home");
 
   const StyledAppbar = styled(AppBar)({
@@ -33,14 +33,6 @@ const Navbar = () => {
 
   const handleChange = (e, val) => {
     setValue(val);
-  };
-
-  const TabPanel = ({ children, value, index }) => {
-    return (
-      <div role="tabpanel" hidden={value !== index}>
-        {value === index && <Box p={3}>{children}</Box>}
-      </div>
-    );
   };
 
   return (

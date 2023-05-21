@@ -1,9 +1,9 @@
-import { Box, Stack, Toolbar, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
 import { useTheme } from "../theme";
 
 const Contact = () => {
-  const { heading, subHeading, linear, mode } = useTheme();
+  const { heading, linear } = useTheme();
 
   return (
     <>

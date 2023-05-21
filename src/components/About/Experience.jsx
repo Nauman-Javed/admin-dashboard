@@ -2,7 +2,7 @@ import { Box, Divider, Typography } from "@mui/material";
 import React from "react";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import ApartmentIcon from "@mui/icons-material/Apartment";
-import { useTheme } from "../theme";
+import { useTheme } from "../../theme";
 
 const Experience = ({ title, company, location, status, duration }) => {
   const { subHeading, statusC, statusBackground } = useTheme();

@@ -1,15 +1,10 @@
-import { Box, Grid, Stack, Toolbar, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography } from "@mui/material";
 import React from "react";
 import { useTheme } from "../theme";
-import bootstrap from "../assets/Icons/bootstrap.png";
-import html from "../assets/Icons/html.png";
-import css from "../assets/Icons/css.png";
-import javascript from "../assets/Icons/js.png";
-import sass from "../assets/Icons/sass.png";
-import github from "../assets/Icons/github.png";
-import react from "../assets/Icons/react.png";
 
-const Image = [bootstrap, html];
+import { bootstrap, css, github, html, js, react, sass } from "../assets/Icons";
+
+const Icons = [html, css, js, react, bootstrap, sass, github];
 
 const TechStack = () => {
   const { heading, subHeading } = useTheme();
@@ -32,27 +27,11 @@ const TechStack = () => {
             columns={{ xs: 4, sm: 8, md: 10, lg: 12 }}
             rowGap={5}
           >
-            <Grid item xs={2}>
-              <img src={bootstrap} alt="" height={"104px"} />
-            </Grid>
-            <Grid item xs={2}>
-              <img src={html} alt="" height={"104px"} />
-            </Grid>
-            <Grid item xs={2}>
-              <img src={css} alt="" height={"104px"} />
-            </Grid>
-            <Grid item xs={2}>
-              <img src={javascript} alt="" height={"104px"} />
-            </Grid>
-            <Grid item xs={2}>
-              <img src={react} alt="" height={"104px"} />
-            </Grid>
-            <Grid item xs={2}>
-              <img src={sass} alt="" height={"104px"} />
-            </Grid>
-            <Grid item xs={2}>
-              <img src={github} alt="" height={"104px"} />
-            </Grid>
+            {Icons.map((icon) => (
+              <Grid item xs={2}>
+                <img src={icon} alt="" height={"104px"} />
+              </Grid>
+            ))}
           </Grid>
         </Box>
       </Box>

@@ -6,7 +6,6 @@ import {
   CardContent,
   CardMedia,
   Stack,
-  Toolbar,
   Typography,
 } from "@mui/material";
 import React from "react";
@@ -43,7 +42,7 @@ const Projects = () => {
               image="/static/images/cards/contemplative-reptile.jpg"
               title="green iguana"
             />
-            <CardContent sx={{ paddingX: "30px" }}>
+            <CardContent sx={{ paddingX: "5%" }}>
               <Typography
                 gutterBottom
                 variant="h4"
@@ -65,7 +64,7 @@ const Projects = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Stack direction="row" spacing={6} marginLeft={"17px"}>
+              <Stack direction="row" spacing={6} marginLeft={"5%"}>
                 <Button variant="text" startIcon={<LinkIcon />}>
                   Live Preview
                 </Button>
