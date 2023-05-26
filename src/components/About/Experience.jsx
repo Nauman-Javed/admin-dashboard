@@ -19,7 +19,13 @@ const Experience = ({ title, company, location, status, duration }) => {
           >
             {title}
           </Typography>
-          <Box display={"flex"} gap={4}>
+          <Box
+            display={{
+              xs: "block",
+              md: "flex",
+            }}
+            gap={4}
+          >
             <Typography
               variant="body1"
               sx={{

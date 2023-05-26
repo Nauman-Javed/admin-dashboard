@@ -18,8 +18,17 @@ const Projects = () => {
   const backColor = mode === "light" ? "#ffff" : "#363636";
   return (
     <>
-      <Box height={"100vh"} width={"100%"}>
-        <Stack mb={20}>
+      <Box
+        sx={{
+          height: "auto",
+          width: "100%",
+          marginTop: {
+            xs: "50px",
+            md: "none",
+          },
+        }}
+      >
+        <Stack mb={20} textAlign={"center"}>
           <Typography variant="h3" fontWeight={"bold"} color={heading} mb={2}>
             Projects
           </Typography>

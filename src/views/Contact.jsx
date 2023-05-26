@@ -19,7 +19,7 @@ const Contact = () => {
           <Typography variant="h2" fontWeight={"bold"} color={heading} mb={2}>
             Lets work together mail me:
           </Typography>
-          <Typography variant="h4" color={linear}>
+          <Typography variant="h5" color={linear}>
             naumanj841@gmail.com
           </Typography>
         </Stack>

@@ -13,7 +13,15 @@ const Home = () => {
           alignItems: "center",
         }}
       >
-        <Typography variant="h2" color={heading} fontWeight={"bold"}>
+        <Typography
+          variant="h2"
+          color={heading}
+          fontWeight={"bold"}
+          textAlign={{
+            xs: "center",
+            md: "left",
+          }}
+        >
           Hi,
           <br />
           My name is

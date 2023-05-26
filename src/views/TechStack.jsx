@@ -4,15 +4,39 @@ import { useTheme } from "../theme";
 
 import { bootstrap, css, github, html, js, react, sass } from "../assets/Icons";
 
-const Icons = [html, css, js, react, bootstrap, sass, github];
+const Icons = [
+  { id: 1, name: html },
+  { id: 2, name: css },
+  { id: 3, name: js },
+  { id: 4, name: react },
+  { id: 5, name: bootstrap },
+  { id: 6, name: sass },
+  { id: 7, name: github },
+];
 
 const TechStack = () => {
   const { heading, subHeading } = useTheme();
 
   return (
     <>
-      <Box height={"100vh"} width={"100%"} id="techStack">
-        <Stack mb={20}>
+      <Box
+        id="techStack"
+        sx={{
+          height: "auto",
+          width: "100%",
+          marginTop: {
+            xs: "50px",
+            md: "none",
+          },
+        }}
+      >
+        <Stack
+          marginBottom={{
+            xs: 10,
+            md: 30,
+          }}
+          textAlign={"center"}
+        >
           <Typography variant="h3" fontWeight={"bold"} color={heading} mb={2}>
             My Tech Stack
           </Typography>
@@ -28,8 +52,8 @@ const TechStack = () => {
             rowGap={5}
           >
             {Icons.map((icon) => (
-              <Grid item xs={2}>
-                <img src={icon} alt="" height={"104px"} />
+              <Grid item xs={2} key={icon.id}>
+                <img src={icon.name} alt="" height={"104px"} />
               </Grid>
             ))}
           </Grid>

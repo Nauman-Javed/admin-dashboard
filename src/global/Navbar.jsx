@@ -3,23 +3,19 @@ import {
   Box,
   IconButton,
   Link,
-  Tab,
-  Tabs,
   Toolbar,
   Typography,
 } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 import { useTheme } from "../theme";
 import styled from "@emotion/styled";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
-import { Links } from "../data/Constants";
 
 const Navbar = () => {
   const { background, linear, subHeading, mode, setMode } = useTheme();
-  const [value, setValue] = useState("Home");
 
   const StyledAppbar = styled(AppBar)({
     boxShadow: "none",
@@ -31,37 +27,36 @@ const Navbar = () => {
     setMode(mode === "light" ? "dark" : "light");
   };
 
-  const handleChange = (e, val) => {
-    setValue(val);
-  };
-
   return (
     <>
       <StyledAppbar>
         <Toolbar sx={{ paddingX: "0 !important" }}>
-          <Typography variant="h6" sx={{ flexGrow: 1 }} color={linear}>
+          <Typography
+            variant="h6"
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", lg: "block" },
+              color: linear,
+            }}
+          >
             Nauman Javed Qureshi
           </Typography>
+          <Typography
+            variant="h6"
+            fontWeight={"bold"}
+            sx={{
+              flexGrow: 1,
+              color: linear,
+              display: {
+                xs: "block",
+                lg: "none",
+              },
+            }}
+          >
+            NJQ
+          </Typography>
+
           <Box display={"flex"} alignItems={"center"}>
-            <Box display={"flex"} alignItems={"center"}>
-              <Tabs
-                value={value}
-                onChange={handleChange}
-                textColor="secondary"
-                indicatorColor="primary"
-              >
-                {Links.map((link, ind) => (
-                  <Tab
-                    value={link.name}
-                    label={link.name}
-                    id={ind}
-                    href={`#${link.link}`}
-                  >
-                    {link.name}
-                  </Tab>
-                ))}
-              </Tabs>
-            </Box>
             <Box>
               <IconButton>
                 <Link href="https://github.com/Nauman-Javed">
