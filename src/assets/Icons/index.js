@@ -1,7 +1,11 @@
-export { default as bootstrap } from "./bootstrap.png";
+export { default as bootstrap5 } from "./bootstrap5.png";
 export { default as css } from "./css.png";
-export { default as github } from "./github.png";
+export { default as gitHub } from "./gitHub.png";
 export { default as html } from "./html.png";
-export { default as js } from "./js.png";
+export { default as javascript } from "./javascript.png";
 export { default as react } from "./react.png";
 export { default as sass } from "./sass.png";
+export { default as materialUI } from "./materialUI.png";
+export { default as redux } from "./redux.png";
+export { default as vsCode } from "./vsCode.png";
+export { default as git } from "./git.png";

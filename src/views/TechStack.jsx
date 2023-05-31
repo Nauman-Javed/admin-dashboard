@@ -2,16 +2,32 @@ import { Box, Grid, Stack, Typography } from "@mui/material";
 import React from "react";
 import { useTheme } from "../theme";
 import classes from "../styles/TechStack/TechStack.module.css";
-import { bootstrap, css, github, html, js, react, sass } from "../assets/Icons";
+import {
+  bootstrap5,
+  css,
+  git,
+  gitHub,
+  html,
+  javascript,
+  materialUI,
+  react,
+  redux,
+  sass,
+  vsCode,
+} from "../assets/Icons";
 
 const Icons = [
   { id: 1, name: html },
   { id: 2, name: css },
-  { id: 3, name: js },
+  { id: 3, name: javascript },
   { id: 4, name: react },
-  { id: 5, name: bootstrap },
-  { id: 6, name: sass },
-  { id: 7, name: github },
+  { id: 5, name: redux },
+  { id: 6, name: bootstrap5 },
+  { id: 7, name: sass },
+  { id: 8, name: materialUI },
+  { id: 9, name: git },
+  { id: 10, name: gitHub },
+  { id: 11, name: vsCode },
 ];
 
 const TechStack = () => {
