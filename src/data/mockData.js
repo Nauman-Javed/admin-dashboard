@@ -1,10 +1,47 @@
-export const project = [
+export const projects = [
   {
-    img: "",
-    title: "",
-    description: "",
-    techStack: [],
-    livePriview: "",
+    img: "https://i.ibb.co/7zGJyCV/Todo.jpg",
+    title: "Task.Io",
+    description: "Front-End application for managing daily tasks.",
+    techStack: [
+      "React Js,",
+      " React Routing,",
+      " Material UI,",
+      " Context API,",
+      " Reducers,",
+      " Moment js",
+    ],
+    livePriview: "https://nauman-taskio.netlify.app/",
+    github: "https://github.com/Nauman-Javed/Todo-App",
+  },
+  {
+    img: "https://i.ibb.co/k99RGCR/Recipe.jpg",
+    title: "Recipe Book",
+    description: "Front-End application for managing recipes.",
+    techStack: [
+      "React Js",
+      " React Routing,",
+      " Bootstrap5,",
+      " Context API,",
+      " Reducers,",
+      " firebase (deployment and authentication),",
+      " React Toastify,",
+    ],
+    livePriview: "https://recipe-book-88940.web.app/",
+    github: "",
+  },
+  {
+    img: "https://i.ibb.co/RNNGG8F/Youtube.jpg",
+    title: "Youtube Clone",
+    description: "Social Media app for sharing videos",
+    techStack: [
+      "React Js",
+      " React Routing,",
+      " Material UI,",
+      " React Toastify,",
+      " Rapid API,",
+    ],
+    livePriview: "https://nauman-youtube-clone.netlify.app/",
     github: "",
   },
 ];

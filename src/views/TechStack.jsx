@@ -1,7 +1,7 @@
 import { Box, Grid, Stack, Typography } from "@mui/material";
 import React from "react";
 import { useTheme } from "../theme";
-
+import classes from "../styles/TechStack/TechStack.module.css";
 import { bootstrap, css, github, html, js, react, sass } from "../assets/Icons";
 
 const Icons = [
@@ -15,7 +15,7 @@ const Icons = [
 ];
 
 const TechStack = () => {
-  const { heading, subHeading } = useTheme();
+  const { heading, subHeading, mode } = useTheme();
 
   return (
     <>
@@ -53,7 +53,12 @@ const TechStack = () => {
           >
             {Icons.map((icon) => (
               <Grid item xs={2} key={icon.id}>
-                <img src={icon.name} alt="" height={"104px"} />
+                <img
+                  src={icon.name}
+                  alt=""
+                  height={"104px"}
+                  className={mode === "light" && classes.shadow}
+                />
               </Grid>
             ))}
           </Grid>

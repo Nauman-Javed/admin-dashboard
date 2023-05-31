@@ -8,6 +8,7 @@ body,
   height: 100%;
   width: 100%;
   font-family: "Source Sans Pro", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .app {
@@ -16,7 +17,7 @@ body,
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {

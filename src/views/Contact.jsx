@@ -9,17 +9,26 @@ const Contact = () => {
     <>
       <Box
         sx={{
-          height: "80vh",
-          width: "100%",
-          paddingTop: "250px",
-          textAlign: "center",
+          height: "100vh",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
         <Stack>
-          <Typography variant="h2" fontWeight={"bold"} color={heading} mb={2}>
+          <Typography
+            variant="h2"
+            fontWeight={"bold"}
+            color={heading}
+            mb={2}
+            textAlign={{
+              xs: "center",
+              md: "left",
+            }}
+          >
             Lets work together mail me:
           </Typography>
-          <Typography variant="h5" color={linear}>
+          <Typography variant="h5" color={linear} textAlign="center">
             naumanj841@gmail.com
           </Typography>
         </Stack>
