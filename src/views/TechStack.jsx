@@ -22,7 +22,7 @@ const TechStack = () => {
       <Box
         id="techStack"
         sx={{
-          height: "auto",
+          minHeight: "100vh",
           width: "100%",
           marginTop: {
             xs: "50px",

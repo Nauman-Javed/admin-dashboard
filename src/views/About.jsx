@@ -14,9 +14,10 @@ const About = () => {
             About Me
           </Typography>
           <Typography variant="h6" color={subHeading}>
-            Self-motivated individual looking for a challenging position as a
-            Web Developer utilizing my technical and problem-solving skills to
-            develop innovative and responsive website designs.
+            I am a skilled and passionate Front-End Developer with expertise in
+            React.js. With a strong foundation in web development, I am
+            dedicated to creating visually appealing and highly functional user
+            interfaces.
           </Typography>
         </Box>
         <Box mb={4}>

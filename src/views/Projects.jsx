@@ -1,7 +1,7 @@
 import { Box, Grid, Stack, Typography } from "@mui/material";
 import React from "react";
 import { useTheme } from "../theme";
-import ProjectCard from "../components/Project/ProjectCard";
+import ProjectCard from "../components/Projects/ProjectCard";
 import { projects } from "../data/mockData";
 
 const Projects = () => {
@@ -10,7 +10,7 @@ const Projects = () => {
     <>
       <Box
         sx={{
-          height: "auto",
+          minHeight: "100vh",
           width: "100%",
           marginTop: {
             xs: "50px",
@@ -23,7 +23,7 @@ const Projects = () => {
             Projects
           </Typography>
           <Typography variant="h6" color={subHeading}>
-            Projects I have built
+            Projects I’ve built so far
           </Typography>
         </Stack>
         <Box>

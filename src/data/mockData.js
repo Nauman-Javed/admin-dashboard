@@ -11,8 +11,7 @@ export const projects = [
       " Reducers,",
       " Moment js",
     ],
-    livePriview: "https://nauman-taskio.netlify.app/",
-    github: "https://github.com/Nauman-Javed/Todo-App",
+    livePreview: "https://nauman-taskio.netlify.app/",
   },
   {
     img: "https://i.ibb.co/k99RGCR/Recipe.jpg",
@@ -27,8 +26,7 @@ export const projects = [
       " firebase (deployment and authentication),",
       " React Toastify,",
     ],
-    livePriview: "https://recipe-book-88940.web.app/",
-    github: "",
+    livePreview: "https://recipe-book-88940.web.app/",
   },
   {
     img: "https://i.ibb.co/RNNGG8F/Youtube.jpg",
@@ -41,7 +39,6 @@ export const projects = [
       " React Toastify,",
       " Rapid API,",
     ],
-    livePriview: "https://nauman-youtube-clone.netlify.app/",
-    github: "",
+    livePreview: "https://nauman-youtube-clone.netlify.app/",
   },
 ];

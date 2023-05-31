@@ -4,13 +4,10 @@ import {
   CardActions,
   CardContent,
   CardMedia,
-  Stack,
   Typography,
 } from "@mui/material";
 import React from "react";
-
 import LinkIcon from "@mui/icons-material/Link";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import { useTheme } from "../../theme";
 
 const ProjectCard = ({ image, title, description, techStack, live }) => {
@@ -53,25 +50,31 @@ const ProjectCard = ({ image, title, description, techStack, live }) => {
             {description}
           </Typography>
           <Typography variant="body1" fontSize={"16px"} color={subHeading}>
-            Tech Stack:{" "}
+            <span
+              style={{
+                color: heading,
+                fontWeight: "bold",
+              }}
+            >
+              Tech Stack:{" "}
+            </span>
+
             {techStack.map((tech) => {
               return tech;
             })}
           </Typography>
         </CardContent>
         <CardActions>
-          <Stack direction="row" spacing={6} marginLeft={"5%"}>
-            <Button
-              variant="text"
-              startIcon={<LinkIcon />}
-              onClick={viewHandler}
-            >
-              Live Preview
-            </Button>
-            <Button variant="text" startIcon={<GitHubIcon />}>
-              View Code
-            </Button>
-          </Stack>
+          <Button
+            variant="text"
+            startIcon={<LinkIcon />}
+            onClick={viewHandler}
+            sx={{
+              marginLeft: "3%",
+            }}
+          >
+            Live Preview
+          </Button>
         </CardActions>
       </Card>
     </>
