@@ -39,7 +39,7 @@ const Navbar = () => {
               color: linear,
             }}
           >
-            Nauman Javed Qureshiasd
+            Nauman Javed Qureshi
           </Typography>
           <Typography
             variant="h6"
