@@ -13,7 +13,7 @@ const About = () => {
           <Typography variant="h3" fontWeight={"bold"} color={heading} mb={4}>
             About Me
           </Typography>
-          <Typography variant="h6" color={subHeading}>
+          <Typography variant="h6" color={subHeading} textAlign={"justify"}>
             I am a skilled and passionate Front-End Developer with expertise in
             React.js. With a strong foundation in web development, I am
             dedicated to creating visually appealing and highly functional user

@@ -2,7 +2,7 @@ import { Box, Grid, Stack, Typography } from "@mui/material";
 import React from "react";
 import { useTheme } from "../theme";
 import ProjectCard from "../components/Projects/ProjectCard";
-import { projects } from "../data/mockData";
+import { PROJECTS } from "../data/mockData";
 
 const Projects = () => {
   const { heading, subHeading } = useTheme();
@@ -28,7 +28,7 @@ const Projects = () => {
         </Stack>
         <Box>
           <Grid container spacing={2}>
-            {projects.map((project) => {
+            {PROJECTS.map((project) => {
               return (
                 <Grid item xs={12} md={6} lg={4}>
                   <ProjectCard

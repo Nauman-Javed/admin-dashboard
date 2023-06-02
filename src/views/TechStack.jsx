@@ -72,7 +72,8 @@ const TechStack = () => {
                 <img
                   src={icon.name}
                   alt=""
-                  height={"104px"}
+                  width={"120px"}
+                  height={"120px"}
                   className={mode === "light" && classes.shadow}
                 />
               </Grid>

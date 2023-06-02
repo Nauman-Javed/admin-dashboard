@@ -1,4 +1,5 @@
 import {
+  Box,
   Button,
   Card,
   CardActions,
@@ -22,20 +23,21 @@ const ProjectCard = ({ image, title, description, techStack, live }) => {
     <>
       <Card
         sx={{
-          maxWidth: "373px",
-          height: "500px",
+          width: "373px",
+          height: "567px",
           borderRadius: "20px",
           boxShadow: mode === "light" && "0px 10px 10px 1px rgba(0, 0, 0, 0.2)",
           backgroundColor: backColor,
         }}
       >
-        <CardMedia sx={{ height: 200 }} image={image} title="green iguana" />
+        <CardMedia
+          sx={{ height: "260px", width: "375px" }}
+          image={image}
+          title="green iguana"
+        />
         <CardContent
           sx={{
             paddingX: "5%",
-            maxHeight: "244px",
-            height: "100%",
-            overflow: "auto",
           }}
         >
           <Typography
@@ -46,23 +48,30 @@ const ProjectCard = ({ image, title, description, techStack, live }) => {
           >
             {title}
           </Typography>
-          <Typography variant="body1" minHeight={"120px"} color={subHeading}>
-            {description}
-          </Typography>
-          <Typography variant="body1" fontSize={"16px"} color={subHeading}>
-            <span
-              style={{
-                color: heading,
-                fontWeight: "bold",
-              }}
-            >
-              Tech Stack:{" "}
-            </span>
+          <Box
+            sx={{
+              maxHeight: "175px",
+              overflow: "auto",
+            }}
+          >
+            <Typography variant="body1" minHeight={"120px"} color={subHeading}>
+              {description}
+            </Typography>
+            <Typography variant="body1" fontSize={"16px"} color={subHeading}>
+              <span
+                style={{
+                  color: heading,
+                  fontWeight: "bold",
+                }}
+              >
+                Tech Stack:{" "}
+              </span>
 
-            {techStack.map((tech) => {
-              return tech;
-            })}
-          </Typography>
+              {techStack.map((tech) => {
+                return tech;
+              })}
+            </Typography>
+          </Box>
         </CardContent>
         <CardActions>
           <Button
