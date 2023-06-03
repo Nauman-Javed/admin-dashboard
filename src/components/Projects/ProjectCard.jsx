@@ -43,8 +43,11 @@ const ProjectCard = ({ image, title, description, techStack, live }) => {
           <Typography
             gutterBottom
             variant="h4"
-            fontSize={"28px"}
-            color={heading}
+            sx={{
+              fontSize: "28px",
+              color: heading,
+              cursor: "default",
+            }}
           >
             {title}
           </Typography>
@@ -54,10 +57,24 @@ const ProjectCard = ({ image, title, description, techStack, live }) => {
               overflow: "auto",
             }}
           >
-            <Typography variant="body1" minHeight={"120px"} color={subHeading}>
+            <Typography
+              variant="body1"
+              sx={{
+                minHeight: "120px",
+                color: subHeading,
+                cursor: "default",
+              }}
+            >
               {description}
             </Typography>
-            <Typography variant="body1" fontSize={"16px"} color={subHeading}>
+            <Typography
+              variant="body1"
+              sx={{
+                fontSize: "16px",
+                color: subHeading,
+                cursor: "default",
+              }}
+            >
               <span
                 style={{
                   color: heading,

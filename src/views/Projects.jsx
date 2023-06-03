@@ -19,10 +19,24 @@ const Projects = () => {
         }}
       >
         <Stack mb={10} textAlign={"center"}>
-          <Typography variant="h3" fontWeight={"bold"} color={heading} mb={2}>
+          <Typography
+            variant="h3"
+            sx={{
+              fontWeight: "bold",
+              color: heading,
+              marginBottom: 2,
+              cursor: "default",
+            }}
+          >
             Projects
           </Typography>
-          <Typography variant="h6" color={subHeading}>
+          <Typography
+            variant="h6"
+            sx={{
+              color: subHeading,
+              cursor: "default",
+            }}
+          >
             Projects I’ve built so far
           </Typography>
         </Stack>
@@ -30,7 +44,7 @@ const Projects = () => {
           <Grid container spacing={2}>
             {PROJECTS.map((project) => {
               return (
-                <Grid item xs={12} md={6} lg={4}>
+                <Grid item xs={12} md={6} lg={4} key={project.id}>
                   <ProjectCard
                     image={project.img}
                     title={project.title}

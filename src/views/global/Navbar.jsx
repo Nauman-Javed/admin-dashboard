@@ -1,62 +1,71 @@
-import {
-  AppBar,
-  Box,
-  IconButton,
-  Link,
-  Toolbar,
-  Typography,
-} from "@mui/material";
+import { Box, IconButton, Link, Toolbar, Typography } from "@mui/material";
 import React from "react";
-import { useTheme } from "../theme";
-import styled from "@emotion/styled";
+import { useTheme } from "../../theme";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
+import {
+  StyledAppbar,
+  StyledLinks,
+} from "../../components/CustomStyledComponents";
+import { NAV_LINKS } from "../../data/mockData";
 
 const Navbar = () => {
-  const { background, linear, subHeading, mode, setMode } = useTheme();
-
-  const StyledAppbar = styled(AppBar)({
-    boxShadow: "none",
-    position: "sticky",
-    backgroundColor: background,
-  });
+  const { background, linear, heading, subHeading, mode, setMode } = useTheme();
 
   const modeHandler = () => {
     setMode(mode === "light" ? "dark" : "light");
   };
 
+  const scrollHandler = (scroll) => {
+    window.scrollTo({
+      top: scroll,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
-      <StyledAppbar>
-        <Toolbar sx={{ paddingX: "0 !important" }}>
+      <StyledAppbar backgroundColor={background}>
+        <Toolbar
+          sx={{
+            paddingX: "0 !important",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
           <Typography
             variant="h6"
             sx={{
               flexGrow: 1,
               display: { xs: "none", lg: "block" },
               color: linear,
+              cursor: "default",
             }}
           >
             Nauman Javed Qureshi
           </Typography>
-          <Typography
-            variant="h6"
-            fontWeight={"bold"}
-            sx={{
-              flexGrow: 1,
-              color: linear,
-              display: {
-                xs: "block",
-                lg: "none",
-              },
-            }}
-          >
-            NJQ
-          </Typography>
 
-          <Box display={"flex"} alignItems={"center"}>
+          <StyledLinks>
+            {NAV_LINKS.map((link, id) => (
+              <Box
+                key={id}
+                sx={{
+                  marginRight: 6,
+                  cursor: "pointer",
+                }}
+                onClick={() => scrollHandler(link.scroll)}
+              >
+                <Link variant="body1" underline="none" color={subHeading}>
+                  {link.name}
+                </Link>
+              </Box>
+            ))}
+          </StyledLinks>
+
+          <Box>
             <Box>
               <IconButton>
                 <Link href="https://github.com/Nauman-Javed">

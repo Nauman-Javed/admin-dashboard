@@ -8,12 +8,27 @@ const About = () => {
 
   return (
     <>
-      <Box maxWidth={{ sm: "100%", lg: "50%" }} height={"100vh"} id="about">
+      <Box maxWidth={{ sm: "100%", lg: "50%" }} height={"100vh"}>
         <Box mb={4}>
-          <Typography variant="h3" fontWeight={"bold"} color={heading} mb={4}>
+          <Typography
+            variant="h3"
+            sx={{
+              fontWeight: "bold",
+              color: heading,
+              marginBottom: 4,
+              cursor: "default",
+            }}
+          >
             About Me
           </Typography>
-          <Typography variant="h6" color={subHeading} textAlign={"justify"}>
+          <Typography
+            variant="h6"
+            sx={{
+              color: subHeading,
+              textAlign: "justify",
+              cursor: "default",
+            }}
+          >
             I am a skilled and passionate Front-End Developer with expertise in
             React.js. With a strong foundation in web development, I am
             dedicated to creating visually appealing and highly functional user
@@ -21,7 +36,15 @@ const About = () => {
           </Typography>
         </Box>
         <Box mb={4}>
-          <Typography variant="h3" fontWeight={"bold"} color={heading} mb={4}>
+          <Typography
+            variant="h3"
+            sx={{
+              fontWeight: "bold",
+              color: heading,
+              marginBottom: 4,
+              cursor: "default",
+            }}
+          >
             Work Experience
           </Typography>
           <Experience
@@ -33,7 +56,15 @@ const About = () => {
           />
         </Box>
         <Box>
-          <Typography variant="h3" fontWeight={"bold"} color={heading} mb={4}>
+          <Typography
+            variant="h3"
+            sx={{
+              fontWeight: "bold",
+              color: heading,
+              marginBottom: 4,
+              cursor: "default",
+            }}
+          >
             Education
           </Typography>
           <Experience

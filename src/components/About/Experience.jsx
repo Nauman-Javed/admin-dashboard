@@ -12,10 +12,14 @@ const Experience = ({ title, company, location, status, duration }) => {
       <Box display={"flex"} justifyContent={"space-between"} my={3}>
         <Box>
           <Typography
-            fontWeight={"bold"}
-            color={subHeading}
-            letterSpacing={2}
-            mb={2}
+            variant="body1"
+            sx={{
+              fontWeight: "bold",
+              color: subHeading,
+              letterSpacing: 2,
+              mb: 2,
+              cursor: "default",
+            }}
           >
             {title}
           </Typography>
@@ -33,6 +37,7 @@ const Experience = ({ title, company, location, status, duration }) => {
                 gap: "5px",
                 alignItems: "center",
                 color: subHeading,
+                cursor: "default",
               }}
             >
               <ApartmentIcon />
@@ -45,6 +50,7 @@ const Experience = ({ title, company, location, status, duration }) => {
                 gap: "5px",
                 alignItems: "center",
                 color: subHeading,
+                cursor: "default",
               }}
             >
               <LocationOnIcon />
@@ -55,19 +61,26 @@ const Experience = ({ title, company, location, status, duration }) => {
         <Box>
           <Typography
             variant="body1"
-            color={statusC}
             sx={{
               backgroundColor: statusBackground,
+              color: statusC,
               padding: " 0 25px",
               borderRadius: "15px",
               width: "fit-content",
               marginBottom: 2,
               fontWeight: "bold",
+              cursor: "default",
             }}
           >
             {status}
           </Typography>
-          <Typography variant="body1" color={subHeading}>
+          <Typography
+            variant="body1"
+            sx={{
+              color: subHeading,
+              cursor: "default",
+            }}
+          >
             {duration}
           </Typography>
         </Box>

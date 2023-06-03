@@ -1,5 +1,14 @@
+export const NAV_LINKS = [
+  { id: 1, name: "Home", scroll: "0" },
+  { id: 2, name: "About", scroll: "800" },
+  { id: 3, name: "Tech Stack", scroll: "1800" },
+  { id: 4, name: "Projects", scroll: "2800" },
+  { id: 5, name: "Contact", scroll: "3900" },
+];
+
 export const PROJECTS = [
   {
+    id: 1,
     img: "https://i.ibb.co/7zGJyCV/Todo.jpg",
     title: "Task.Io",
     description:
@@ -15,6 +24,7 @@ export const PROJECTS = [
     livePreview: "https://nauman-taskio.netlify.app/",
   },
   {
+    id: 2,
     img: "https://i.ibb.co/k99RGCR/Recipe.jpg",
     title: "Recipe Book",
     description:
@@ -26,11 +36,12 @@ export const PROJECTS = [
       " Context API,",
       " Reducers,",
       " firebase authentication,",
-      " React Toastify,",
+      " React Toastify",
     ],
     livePreview: "https://recipe-book-88940.web.app/",
   },
   {
+    id: 3,
     img: "https://i.ibb.co/RNNGG8F/Youtube.jpg",
     title: "Youtube Clone",
     description:
@@ -40,7 +51,7 @@ export const PROJECTS = [
       " React Routing,",
       " Material UI,",
       " React Toastify,",
-      " Rapid API,",
+      " Rapid API",
     ],
     livePreview: "https://nauman-youtube-clone.netlify.app/",
   },

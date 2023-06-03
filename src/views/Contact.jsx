@@ -18,17 +18,27 @@ const Contact = () => {
         <Stack>
           <Typography
             variant="h2"
-            fontWeight={"bold"}
-            color={heading}
-            mb={2}
-            textAlign={{
-              xs: "center",
-              md: "left",
+            sx={{
+              fontWeight: "bold",
+              color: heading,
+              mb: 2,
+              textAlign: {
+                xs: "center",
+                md: "left",
+              },
+              cursor: "default",
             }}
           >
             Lets work together mail me:
           </Typography>
-          <Typography variant="h5" color={linear} textAlign="center">
+          <Typography
+            variant="h5"
+            sx={{
+              color: linear,
+              textAlign: "center",
+              cursor: "default",
+            }}
+          >
             naumanj841@gmail.com
           </Typography>
         </Stack>

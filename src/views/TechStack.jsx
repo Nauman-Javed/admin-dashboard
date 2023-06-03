@@ -4,15 +4,15 @@ import { useTheme } from "../theme";
 import classes from "../styles/TechStack/TechStack.module.css";
 import {
   bootstrap5,
-  css,
-  git,
-  gitHub,
   html,
+  css,
   javascript,
-  materialUI,
   react,
   redux,
   sass,
+  materialUI,
+  git,
+  gitHub,
   vsCode,
 } from "../assets/Icons";
 
@@ -36,7 +36,6 @@ const TechStack = () => {
   return (
     <>
       <Box
-        id="techStack"
         sx={{
           minHeight: "100vh",
           width: "100%",
@@ -53,10 +52,24 @@ const TechStack = () => {
           }}
           textAlign={"center"}
         >
-          <Typography variant="h3" fontWeight={"bold"} color={heading} mb={2}>
+          <Typography
+            variant="h3"
+            sx={{
+              fontWeight: "bold",
+              color: heading,
+              marginBottom: 2,
+              cursor: "default",
+            }}
+          >
             My Tech Stack
           </Typography>
-          <Typography variant="h6" color={subHeading}>
+          <Typography
+            variant="h6"
+            sx={{
+              color: subHeading,
+              cursor: "default",
+            }}
+          >
             Technologies I've been working with recently
           </Typography>
         </Stack>

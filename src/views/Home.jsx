@@ -15,11 +15,11 @@ const Home = () => {
       >
         <Typography
           variant="h2"
-          color={heading}
-          fontWeight={"bold"}
-          textAlign={{
-            xs: "center",
-            md: "left",
+          sx={{
+            color: heading,
+            fontWeight: "bold",
+            textAlign: { xs: "center", md: "left" },
+            cursor: "default",
           }}
         >
           Hi,
