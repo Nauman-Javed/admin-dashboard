@@ -32,7 +32,7 @@ const Contact = () => {
             Lets work together mail me:
           </Typography>
           <Typography
-            variant="h5"
+            variant="h4"
             sx={{
               color: linear,
               textAlign: "center",

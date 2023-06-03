@@ -33,7 +33,7 @@ const ProjectCard = ({ image, title, description, techStack, live }) => {
         <CardMedia
           sx={{ height: "260px", width: "375px" }}
           image={image}
-          title="green iguana"
+          title={title}
         />
         <CardContent
           sx={{

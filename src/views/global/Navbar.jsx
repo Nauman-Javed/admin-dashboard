@@ -12,7 +12,7 @@ import {
 import { NAV_LINKS } from "../../data/mockData";
 
 const Navbar = () => {
-  const { background, linear, heading, subHeading, mode, setMode } = useTheme();
+  const { background, linear, subHeading, mode, setMode } = useTheme();
 
   const modeHandler = () => {
     setMode(mode === "light" ? "dark" : "light");
