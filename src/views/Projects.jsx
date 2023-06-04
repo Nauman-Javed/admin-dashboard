@@ -40,8 +40,8 @@ const Projects = () => {
             Projects I’ve built so far
           </Typography>
         </Stack>
-        <Box>
-          <Grid container spacing={2}>
+        <Box marginLeft={9}>
+          <Grid container spacing={2} rowGap={4}>
             {PROJECTS.map((project) => {
               return (
                 <Grid item xs={12} md={6} lg={4} key={project.id}>

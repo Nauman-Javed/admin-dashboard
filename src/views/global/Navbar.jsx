@@ -21,7 +21,6 @@ const Navbar = () => {
   const scrollHandler = (scroll) => {
     window.scrollTo({
       top: scroll,
-      behavior: "smooth",
     });
   };
 
@@ -36,36 +35,41 @@ const Navbar = () => {
             alignItems: "center",
           }}
         >
-          <Typography
-            variant="h6"
+          <Box>
+            <Typography
+              variant="h6"
+              sx={{
+                flexGrow: 1,
+                display: { xs: "none", lg: "block" },
+                color: linear,
+                cursor: "default",
+              }}
+            >
+              Nauman Javed Qureshi
+            </Typography>
+          </Box>
+          <Box
             sx={{
-              flexGrow: 1,
-              display: { xs: "none", lg: "block" },
-              color: linear,
-              cursor: "default",
+              display: "flex",
+              alignItems: "center",
             }}
           >
-            Nauman Javed Qureshi
-          </Typography>
-
-          <StyledLinks>
-            {NAV_LINKS.map((link, id) => (
-              <Box
-                key={id}
-                sx={{
-                  marginRight: 6,
-                  cursor: "pointer",
-                }}
-                onClick={() => scrollHandler(link.scroll)}
-              >
-                <Link variant="body1" underline="none" color={subHeading}>
-                  {link.name}
-                </Link>
-              </Box>
-            ))}
-          </StyledLinks>
-
-          <Box>
+            <StyledLinks>
+              {NAV_LINKS.map((link, id) => (
+                <Box
+                  key={id}
+                  sx={{
+                    marginRight: 6,
+                    cursor: "pointer",
+                  }}
+                  onClick={() => scrollHandler(link.scroll)}
+                >
+                  <Link variant="body1" underline="none" color={subHeading}>
+                    {link.name}
+                  </Link>
+                </Box>
+              ))}
+            </StyledLinks>
             <Box>
               <IconButton>
                 <Link href="https://github.com/Nauman-Javed">
