@@ -24,22 +24,6 @@ export const PROJECTS = [
     livePreview: "https://nauman-taskio.netlify.app/",
   },
   {
-    id: 1,
-    img: "https://i.ibb.co/7zGJyCV/Todo.jpg",
-    title: "Task.Io",
-    description:
-      "Front-End application for managing daily tasks with basic CRUD operations. Build using React js and Material UI.",
-    techStack: [
-      "React Js,",
-      " React Routing,",
-      " Material UI,",
-      " Context API,",
-      " Reducers,",
-      " Moment js",
-    ],
-    livePreview: "https://nauman-taskio.netlify.app/",
-  },
-  {
     id: 2,
     img: "https://i.ibb.co/k99RGCR/Recipe.jpg",
     title: "Recipe Book",

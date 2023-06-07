@@ -28,6 +28,7 @@ const ProjectCard = ({ image, title, description, techStack, live }) => {
           borderRadius: "20px",
           boxShadow: mode === "light" && "0px 10px 10px 1px rgba(0, 0, 0, 0.2)",
           backgroundColor: backColor,
+          margin: " auto",
         }}
       >
         <CardMedia

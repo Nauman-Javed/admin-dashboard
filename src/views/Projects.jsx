@@ -40,7 +40,7 @@ const Projects = () => {
             Projects I’ve built so far
           </Typography>
         </Stack>
-        <Box marginLeft={9}>
+        <Box>
           <Grid container spacing={2} rowGap={4}>
             {PROJECTS.map((project) => {
               return (
