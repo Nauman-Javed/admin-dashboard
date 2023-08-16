@@ -27,6 +27,10 @@ const Contact = () => {
                 md: "left",
               },
               cursor: "default",
+              fontSize: {
+                xs: "30px",
+                sm: "45px",
+              },
             }}
           >
             Lets work together mail me:
@@ -37,6 +41,10 @@ const Contact = () => {
               color: linear,
               textAlign: "center",
               cursor: "default",
+              fontSize: {
+                xs: "25px",
+                sm: "35px",
+              },
             }}
           >
             naumanj841@gmail.com

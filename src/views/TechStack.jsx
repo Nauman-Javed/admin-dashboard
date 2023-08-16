@@ -68,6 +68,10 @@ const TechStack = () => {
             sx={{
               color: subHeading,
               cursor: "default",
+              fontSize: {
+                xs: "16px",
+                sm: "20px",
+              },
             }}
           >
             Technologies I've been working with recently

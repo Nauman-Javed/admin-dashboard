@@ -17,6 +17,7 @@ const About = () => {
               color: heading,
               marginBottom: 4,
               cursor: "default",
+              textAlign: { xs: "center", sm: "left" },
             }}
           >
             About Me
@@ -27,12 +28,17 @@ const About = () => {
               color: subHeading,
               textAlign: "justify",
               cursor: "default",
+              fontSize: {
+                xs: "16px",
+                sm: "20px",
+              },
             }}
           >
-            I am a skilled and passionate Front-End Developer with expertise in
-            React.js. With a strong foundation in web development, I am
-            dedicated to creating visually appealing and highly functional user
-            interfaces.
+            Highly motivated entry-level Front-End Developer with 1 year of
+            experience in ReactJS, proficient in HTML, CSS, and
+            JavaScript/TypeScript, seeking to leverage my skills to create
+            visually appealing and user-friendly interfaces, and contribute to
+            the success of a dynamic and innovative team.
           </Typography>
         </Box>
         <Box mb={4}>
@@ -43,6 +49,11 @@ const About = () => {
               color: heading,
               marginBottom: 4,
               cursor: "default",
+              textAlign: { xs: "center", sm: "left" },
+              fontSize: {
+                xs: "42px",
+                sm: "48px",
+              },
             }}
           >
             Work Experience
@@ -63,6 +74,11 @@ const About = () => {
               color: heading,
               marginBottom: 4,
               cursor: "default",
+              textAlign: { xs: "center", sm: "left" },
+              fontSize: {
+                xs: "42px",
+                sm: "48px",
+              },
             }}
           >
             Education

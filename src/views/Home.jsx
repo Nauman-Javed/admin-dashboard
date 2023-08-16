@@ -18,8 +18,12 @@ const Home = () => {
           sx={{
             color: heading,
             fontWeight: "bold",
-            textAlign: { xs: "center", md: "left" },
+            textAlign: { xs: "center", sm: "left" },
             cursor: "default",
+            fontSize: {
+              xs: "40px",
+              md: "55px",
+            },
           }}
         >
           Hi,

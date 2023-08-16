@@ -1,4 +1,4 @@
-import { Box, Container, CssBaseline } from "@mui/material";
+import { Box, Container, CssBaseline, Hidden } from "@mui/material";
 import { useTheme } from "./theme";
 
 import { Home, About, TechStack, Projects, Contact } from "./views";
@@ -13,6 +13,8 @@ function App() {
       <Box
         sx={{
           background: background,
+          position: "relative",
+          overflow: "Hidden",
         }}
       >
         <Container maxWidth={"xl"}>
