@@ -40,7 +40,7 @@ const Navbar = () => {
               variant="h6"
               sx={{
                 flexGrow: 1,
-                display: { xs: "none", lg: "block" },
+                display: { xs: "none", sm: "block" },
                 color: linear,
                 cursor: "default",
               }}

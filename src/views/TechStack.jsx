@@ -14,20 +14,34 @@ import {
   git,
   github,
   vsCode,
+  firebase,
+  mysql,
+  nextjs,
+  postman,
+  reactrouter,
+  tailwindcss,
+  typescript,
 } from "../assets/Icons";
 
 const Icons = [
   { id: 1, name: html },
   { id: 2, name: css },
   { id: 3, name: javascript },
-  { id: 4, name: react },
-  { id: 5, name: redux },
-  { id: 6, name: bootstrap5 },
-  { id: 7, name: sass },
-  { id: 8, name: materialUI },
-  { id: 9, name: git },
-  { id: 10, name: github },
-  { id: 11, name: vsCode },
+  { id: 4, name: typescript },
+  { id: 5, name: react },
+  { id: 6, name: nextjs },
+  { id: 7, name: redux },
+  { id: 8, name: reactrouter },
+  { id: 9, name: bootstrap5 },
+  { id: 10, name: materialUI },
+  { id: 11, name: tailwindcss },
+  { id: 12, name: vsCode },
+  { id: 13, name: git },
+  { id: 14, name: github },
+  { id: 15, name: firebase },
+  { id: 16, name: sass },
+  { id: 17, name: postman },
+  { id: 18, name: mysql },
 ];
 
 const TechStack = () => {
@@ -45,13 +59,7 @@ const TechStack = () => {
           },
         }}
       >
-        <Stack
-          marginBottom={{
-            xs: 10,
-            md: 30,
-          }}
-          textAlign={"center"}
-        >
+        <Stack mb={10} textAlign={"center"}>
           <Typography
             variant="h3"
             sx={{
