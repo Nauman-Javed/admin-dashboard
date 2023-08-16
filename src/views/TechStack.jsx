@@ -12,7 +12,7 @@ import {
   sass,
   materialUI,
   git,
-  gitHub,
+  github,
   vsCode,
 } from "../assets/Icons";
 
@@ -26,7 +26,7 @@ const Icons = [
   { id: 7, name: sass },
   { id: 8, name: materialUI },
   { id: 9, name: git },
-  { id: 10, name: gitHub },
+  { id: 10, name: github },
   { id: 11, name: vsCode },
 ];
 

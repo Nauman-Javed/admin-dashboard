@@ -1,6 +1,6 @@
 export { default as bootstrap5 } from "./bootstrap5.png";
 export { default as css } from "./css.png";
-export { default as gitHub } from "./gitHub.png";
+export { default as github } from "./github.png";
 export { default as html } from "./html.png";
 export { default as javascript } from "./javascript.png";
 export { default as react } from "./react.png";
