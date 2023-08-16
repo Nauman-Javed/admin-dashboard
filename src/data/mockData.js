@@ -30,7 +30,7 @@ export const PROJECTS = [
     description:
       "Front-End application for managing recipes with basic CRUD operations. Build using React js and Bootstrap5.",
     techStack: [
-      "React Js",
+      "React Js,",
       " React Routing,",
       " Bootstrap5,",
       " Context API,",
@@ -47,12 +47,21 @@ export const PROJECTS = [
     description:
       "Front-End application for watching videos online which consist of channel pages, custom categories and video sections. Build using React js and Material UI.",
     techStack: [
-      "React Js",
+      "React Js,",
       " React Routing,",
       " Material UI,",
       " React Toastify,",
       " Rapid API",
     ],
     livePreview: "https://nauman-youtube-clone.netlify.app/",
+  },
+  {
+    id: 4,
+    img: "https://i.ibb.co/BrJP8QX/car.png",
+    title: "Car Hub",
+    description:
+      "Front-End application where users can seamlessly search for cars. Build using Next js, designed a modern and responsive user interface using Tailwind CSS and Headless UI.",
+    techStack: ["Next Js", " Tailwind CSS", " Headless UI,", " Rapid API"],
+    livePreview: "https://carhub-nextjs-topaz.vercel.app/",
   },
 ];

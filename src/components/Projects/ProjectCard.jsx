@@ -23,7 +23,7 @@ const ProjectCard = ({ image, title, description, techStack, live }) => {
     <>
       <Card
         sx={{
-          width: "373px",
+          width: "400px",
           height: "567px",
           borderRadius: "20px",
           boxShadow: mode === "light" && "0px 10px 10px 1px rgba(0, 0, 0, 0.2)",
@@ -32,12 +32,13 @@ const ProjectCard = ({ image, title, description, techStack, live }) => {
         }}
       >
         <CardMedia
-          sx={{ height: "260px", width: "375px" }}
+          sx={{ height: "260px", width: "100%" }}
           image={image}
           title={title}
         />
         <CardContent
           sx={{
+            width: "100%",
             paddingX: "5%",
           }}
         >
