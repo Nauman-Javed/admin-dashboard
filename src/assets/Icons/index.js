@@ -16,3 +16,4 @@ export { default as postman } from "./postman.png";
 export { default as reactrouter } from "./react-router.png";
 export { default as tailwindcss } from "./tailwind-css.png";
 export { default as typescript } from "./typescript.png";
+export { default as admin } from "./admin.png";

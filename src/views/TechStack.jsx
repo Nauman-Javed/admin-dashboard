@@ -22,6 +22,7 @@ import {
   tailwindcss,
   typescript,
 } from "../assets/Icons";
+import styled from "@emotion/styled";
 
 const Icons = [
   { id: 1, name: html },
@@ -96,7 +97,7 @@ const TechStack = () => {
               <Grid item xs={2} key={icon.id}>
                 <img
                   src={icon.name}
-                  alt=""
+                  alt="project thumbnail"
                   width={"120px"}
                   height={"120px"}
                   className={mode === "light" && classes.shadow}
