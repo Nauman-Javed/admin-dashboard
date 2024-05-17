@@ -34,11 +34,11 @@ const About = () => {
               },
             }}
           >
-            Highly motivated entry-level Front-End Developer with 1 year of
-            experience in ReactJS, proficient in HTML, CSS, and
-            JavaScript/TypeScript, seeking to leverage my skills to create
-            visually appealing and user-friendly interfaces, and contribute to
-            the success of a dynamic and innovative team.
+            Front-End Developer with 1 year of experience in React.js and
+            Next.js, proficient in HTML, CSS, and JavaScript/TypeScript.
+            Dedicated to crafting visually appealing, user-friendly interfaces,
+            I aim to contribute my skills to the success of a dynamic and
+            innovative team.
           </Typography>
         </Box>
         <Box mb={4}>
@@ -58,6 +58,13 @@ const About = () => {
           >
             Work Experience
           </Typography>
+          <Experience
+            title={"Implementation Engineer"}
+            company={"Center for Advance Research in Engineering"}
+            location={"Islamabad"}
+            status={"Full Time"}
+            duration={"Nov 2023 - Present"}
+          />
           <Experience
             title={"3D Artist"}
             company={"Quell x Code"}

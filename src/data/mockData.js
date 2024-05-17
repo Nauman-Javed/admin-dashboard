@@ -1,3 +1,15 @@
+import taskImage from "../assets/Task.PNG";
+import recipeImage from "../assets/recipe.PNG";
+import youtubeImage from "../assets/youtube.PNG";
+import carhubImage from "../assets/carhub.PNG";
+
+export const Images = {
+  task: taskImage,
+  recipe: recipeImage,
+  youtube: youtubeImage,
+  carhub: carhubImage,
+};
+
 export const NAV_LINKS = [
   { id: 1, name: "Home", scroll: "0" },
   { id: 2, name: "About", scroll: "800" },
@@ -9,7 +21,7 @@ export const NAV_LINKS = [
 export const PROJECTS = [
   {
     id: 1,
-    img: "https://i.ibb.co/101MxTT/todo.png",
+    img: Images.task,
     title: "Task.Io",
     description:
       "Front-End application for managing daily tasks with basic CRUD operations. Build using React js and Material UI.",
@@ -25,7 +37,7 @@ export const PROJECTS = [
   },
   {
     id: 2,
-    img: "https://i.ibb.co/z423zPz/recipe.png",
+    img: Images.recipe,
     title: "Recipe Book",
     description:
       "Front-End application for managing recipes with basic CRUD operations. Build using React js and Bootstrap5.",
@@ -42,7 +54,7 @@ export const PROJECTS = [
   },
   {
     id: 3,
-    img: "https://i.ibb.co/sJFynBs/youtube.png",
+    img: Images.youtube,
     title: "Youtube Clone",
     description:
       "Front-End application for watching videos online which consist of channel pages, custom categories and video sections. Build using React js and Material UI.",
@@ -57,7 +69,7 @@ export const PROJECTS = [
   },
   {
     id: 4,
-    img: "https://i.ibb.co/SdJhHY4/carhub.png",
+    img: Images.carhub,
     title: "Car Hub",
     description:
       "Front-End application where users can seamlessly search for cars. Build using Next js, designed a modern and responsive user interface using Tailwind CSS and Headless UI.",
