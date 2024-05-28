@@ -70,6 +70,7 @@ const Experience = ({ title, company, location, status, duration }) => {
               marginBottom: 2,
               fontWeight: "bold",
               cursor: "default",
+              fontSize: "14px",
             }}
           >
             {status}

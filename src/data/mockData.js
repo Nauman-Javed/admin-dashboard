@@ -2,12 +2,14 @@ import taskImage from "../assets/Task.PNG";
 import recipeImage from "../assets/recipe.PNG";
 import youtubeImage from "../assets/youtube.PNG";
 import carhubImage from "../assets/carhub.PNG";
+import foodDeliveryImage from "../assets/foodDelivery.PNG";
 
 export const Images = {
   task: taskImage,
   recipe: recipeImage,
   youtube: youtubeImage,
   carhub: carhubImage,
+  foodDelivery: foodDeliveryImage,
 };
 
 export const NAV_LINKS = [
@@ -75,5 +77,14 @@ export const PROJECTS = [
       "Front-End application where users can seamlessly search for cars. Build using Next js, designed a modern and responsive user interface using Tailwind CSS and Headless UI.",
     techStack: ["Next Js,", " Tailwind CSS,", " Headless UI,", " Rapid API"],
     livePreview: "https://carhub-nextjs-topaz.vercel.app/",
+  },
+  {
+    id: 5,
+    img: Images.foodDelivery,
+    title: "Food Delivery",
+    description:
+      "Full Stack application (Under Development) where users can seamlessly search for restaurant and food items. Build using Next js and Typescript, designed a modern and responsive user interface using Tailwind CSS and Material UI components.",
+    techStack: ["Next Js,", " Tailwind CSS,", " Material UI,", " Typescript"],
+    livePreview: "https://food-delivery-app-umber.vercel.app/",
   },
 ];
