@@ -12,7 +12,7 @@ const Projects = () => {
         sx={{
           width: "100%",
           marginTop: {
-            xs: "50px",
+            xs: "250px",
             md: "none",
           },
         }}

@@ -55,7 +55,7 @@ const TechStack = () => {
           minHeight: "100vh",
           width: "100%",
           marginTop: {
-            xs: "50px",
+            xs: "250px",
             md: "none",
           },
         }}
